@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+.app_flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    width:100%;
+    height: 10vh;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 5vh;
+    justify-content: space-around;
+}
+.menu .btns{
+    flex: 0.3;
+    justify-content: space-between;
+}
+a{
+    text-decoration:none;
+    color: unset;
+}
+.btns .opt,.product-add{
+    color: rgb(22, 54, 93);
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: #ecedf0; 
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.btns .opt:hover , .product-add:hover{
+    color: #ecedf0; 
+    background-color: rgb(22, 54, 93);
+
+}
+.opt:nth-child(1):before{
+    content: attr(data-count);
+    position: absolute;
+    left: -15%;
+    top: -15%;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    font-size: 10px;
+    background-color:rgb(22, 54, 93);
+    color: White;
+    display: grid;
+    place-items: center;
+}
+body{
+    width: 100vw;
+    flex-direction: column;
+    background-color: #ecedf0
+}
+form{
+    width: 100%;
+}
+h2{
+    margin-bottom: 5vh;
+}
+.products-list{
+    width: 80%;
+    min-width: 400px;
+    height: max-content;
+    background-color:white;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.product{
+    min-width: 120px;
+    width: max-content;
+    padding: 5px 10px;
+    background-color: #4674ff; 
+    border-radius: 10px;
+    font-weight: bold;
+    color: White;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.product-add{
+    flex: 0.3;
+    background-color: #ecedf0; 
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
